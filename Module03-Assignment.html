@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="demo" </p>
+  <script>
+
+    let str=prompt("What is yoour favorite color?");
+    revStr=reverseit(str);
+    document.getElementById("demo").innerHTML = "This is backwards: " + revStr;
+
+    function reverseit(str){
+    let reverseStr=str.split('').reverse().join('');
+    return reverseStr;
+  }
+  </script>
+  </body>
+</html>
